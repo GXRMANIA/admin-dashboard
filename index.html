@@ -6,40 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <div class="wrap">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
-            <ul class="nav top">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+            <div class="logo"> <span class="material-symbols-outlined"> dashboard </span> Dashboard</div>
+            <ul>
+                <li> <span class="material-symbols-outlined"> home </span> Home</li>
+                <li> <span class="material-symbols-outlined"> person </span> Profile</li>
+                <li> <span class="material-symbols-outlined"> chat_bubble </span> Messages</li>
+                <li> <span class="material-symbols-outlined"> history </span> History</li>
+                <li> <span class="material-symbols-outlined"> task </span> Tasks</li>
+                <li> <span class="material-symbols-outlined"> groups </span> Communities</li>
             </ul>
-            <ul class="nav bottom">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+            <ul>
+                <li> <span class="material-symbols-outlined"> settings </span> Settings</li>
+                <li> <span class="material-symbols-outlined"> help </span> Support</li>
+                <li> <span class="material-symbols-outlined"> lock </span> Privacy</li>
             </ul>
         </div>
         <div class="wrap-content">
             <div class="header">
                 <div class="topheader">
                     <div class="left">
-                        <div>Search</div>
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
                         <input type="text" name="search" id="search">
                     </div>
                     <div class="right">
-                        <div>Bell</div>
-                        <div>Logo</div>
-                        <div>Name</div>
+                        <div>
+                            <span class="material-symbols-outlined">
+                            notifications_active
+                            </span>
+                        </div>
+                        <div>
+                            <img src="kollegah.jpg" alt="profile pic">
+                        </div>
+                        <div class="name">Felix Blume</div>
                     </div>
                 </div>
                 <div class="bottomheader">
-                    <div class="left">Name and Logo</div>
+                    <div class="left">
+                        <img src="kollegah.jpg" alt="profile pic">
+                        <div class="wrap">
+                            <div>Hi there,</div>
+                            <div>Felix Blume (@kollegah)</div>
+                        </div>
+                    </div>
                     <div class="right">
                         <button>New</button>
                         <button>Upload</button>
@@ -52,81 +69,157 @@
                     <div class="title">Your Projects</div>
                     <div class="project-wrapper">
                         <div class="project">
-                            <h2>Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div>Logo1</div>
-                            <div>Logo2</div>
-                            <div>Logo3</div>
+                            <div class="text">
+                                <h2>Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="icons">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    share
+                                </span>
+                            </div>
                         </div>
                         <div class="project">
-                            <h2>Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div>Logo1</div>
-                            <div>Logo2</div>
-                            <div>Logo3</div>
+                            <div class="text">
+                                <h2>Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="icons">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    share
+                                </span>
+                            </div>
                         </div>
                         <div class="project">
-                            <h2>Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div>Logo1</div>
-                            <div>Logo2</div>
-                            <div>Logo3</div>
+                            <div class="text">
+                                <h2>Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="icons">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    share
+                                </span>
+                            </div>
                         </div>
                         <div class="project">
-                            <h2>Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div>Logo1</div>
-                            <div>Logo2</div>
-                            <div>Logo3</div>
+                            <div class="text">
+                                <h2>Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="icons">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    share
+                                </span>
+                            </div>
                         </div>
                         <div class="project">
-                            <h2>Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div>Logo1</div>
-                            <div>Logo2</div>
-                            <div>Logo3</div>
+                            <div class="text">
+                                <h2>Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="icons">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    share
+                                </span>
+                            </div>
                         </div>
                         <div class="project">
-                            <h2>Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
-                            <div>Logo1</div>
-                            <div>Logo2</div>
-                            <div>Logo3</div>
+                            <div class="text">
+                                <h2>Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                            <div class="icons">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    visibility
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    share
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="rightcontent">
                     <div class="top">
-                        Announcements
-                        <div class="announcements">
+                        <div class="title">Announcements</div>
+                        <div class="anno">
                             <div>
-                                <h2>Title Announcement 1</h2>
+                                <h2>Title 1</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                             <div>
-                                <h2>Title Announcement 1</h2>
+                                <h2>Title 2</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                             <div>
-                                <h2>Title Announcement 1</h2>
+                                <h2>Title 3</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
                     <div class="bottom">
-                        Trending
-                        <div class="Trending">
+                        <div class="title">Trending</div>
+                        <div class="trending">
                             <div>
-                                <h2>Logo1</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <img src="sun.jpg" alt="sun diego">
+                                <div class="right">
+                                    <p class="bold">@SunDiego</p>
+                                    <p>Sun Diego AKA</p>
+                                </div>
                             </div>
                             <div>
-                                <h2>Logo2</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <img src="farid-bang.jpg" alt="sun diego">
+                                <div class="right">
+                                    <p class="bold">@SunDiego</p>
+                                    <p>Sun Diego AKA</p>
+                                </div>
                             </div>
                             <div>
-                                <h2>Logo3</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <img src="majoe.jpg" alt="sun diego">
+                                <div class="right">
+                                    <p class="bold">@SunDiego</p>
+                                    <p>Sun Diego AKA</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="kollegah.jpg" alt="sun diego">
+                                <div class="right">
+                                    <p class="bold">@SunDiego</p>
+                                    <p>Sun Diego AKA</p>
+                                </div>
                             </div>
                         </div>
                     </div>

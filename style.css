@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-li {
+ul, li {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .wrap {
@@ -17,40 +19,114 @@ li {
 .wrap-content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: .9fr 5fr;
 }
 
 .sidebar {
     grid-row: 1/2;
-}
-
-.sidebar {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 60px;
-    padding: 40px;
+    padding: 40px 20px 0px 30px; 
+    background-color: #1992d4;
+}
+
+.sidebar .logo {
+    display: flex;
     align-items: center;
-    background-color: rgba(221, 185, 255, 0.568);
+    font-size: 27px;
+    color: white;
+    font-weight: 900;
+    gap: 18px;
+}
+
+.sidebar .logo span {
+    font-size: 55px;
+}
+
+.sidebar ul > li {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 800;
 }
 
 .header {
     grid-column: 1/2;
     grid-row: 1/2;
     display: grid;
-    padding: 40px;
+    padding: 10px 40px;
     grid-template-rows: 1fr 1fr;
-    background-color: rgb(255, 160, 160);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(255, 255, 255);
 }
 
 .topheader, .bottomheader{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+
+.left {
+    flex-grow: 1;
+}
+
+.right .name {
+    font-weight: 600;
+}
+
+.right img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.bottomheader img {
+    height: 65px;
+    border-radius: 50%;
+}
+
+.bottomheader .left {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.bottomheader .wrap {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.bottomheader .wrap div:nth-child(2) {
+    font-size: 22px;
+}
+
+.bottomheader button {
+    border: none;
+    background-color: #1992d4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 18px;
 }
 
 .topheader .left {
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.left #search {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 13px;
+    max-width: 800px;
+    background-color: rgb(226 232 240);
 }
 
 .topheader .right {
@@ -62,20 +138,92 @@ li {
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 50px;
+    background-color: rgba(226, 232, 240, 0.37);
+    gap: 30px;
 }
 
 .leftcontent .project-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .rightcontent {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
 }
 
-.rightcontent .top {
-    
+.project {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    border-radius: 17px;
+    min-height: 200px;
+    position: relative;
+    font-size: 16px;
+}
 
+.project::before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    left: 0px;
+    top: 0px;
+    border-radius: 2px;
+    background-color: orange;
+    height: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.project .icons {
+    align-self: flex-end;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.leftcontent .title, .content .title {
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.anno, .trending {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 17px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px;
+}
+
+.trending img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.trending > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.trending .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+}
+.right .bold {
+    font-weight: 500;
 }
